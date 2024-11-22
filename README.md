@@ -8,21 +8,20 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-import pandas module and import the required data set.
-Find the null values and count them.
-Count number of left values.
-From sklearn import LabelEncoder to convert string values to numerical values.
-From sklearn.model_selection import train_test_split.
-Assign the train dataset and test dataset.
-From sklearn.tree import DecisionTreeClassifier.
-Use criteria as entropy.
-From sklearn import metrics.
-Find the accuracy of our model and predict the require values.
+1. Load and Preprocess Data: Read the dataset, drop unnecessary columns, and convert categorical variables into numerical codes using .astype('category') and .cat.codes.
+
+2. Define Variables: Split the dataset into features (X) and target variable (Y), and initialize a random parameter vector theta.
+
+3. Implement Functions: Define the sigmoid, loss, gradient_descent, and predict functions for logistic regression.
+
+4. Train Model: Use gradient descent to optimize the parameters theta over a specified number of iterations.
+
+5. Evaluate and Predict: Calculate accuracy of predictions on the training data, and demonstrate predictions with new sample data.
 ## Program:
 ```
 /*
 Program to implement the the Logistic Regression Using Gradient Descent.
-Developed by: THILAKESWARAN KP
+Developed by: Thilakeswaran KP
 RegisterNumber:  212223230232
 
 import pandas as pd
@@ -103,8 +102,25 @@ print(y_prednew)
 ```
 
 ## Output:
+dataset:
+![1](https://github.com/user-attachments/assets/23235110-1073-4ba6-83e3-e0185a978684)
 
-![Screenshot 2024-09-22 203744](https://github.com/user-attachments/assets/6a648d0a-a64b-498d-87f9-668110579bae)
+dataset after printing only codes columns:
+![3](https://github.com/user-attachments/assets/3c8f0558-826e-44ae-a28e-21d93bdcb4ec)
+
+Accuracy:
+
+![Screenshot 2024-11-05 000341](https://github.com/user-attachments/assets/7a9a816e-fcf5-41fb-b5ca-cfd3bb70d7af)
+
+Array values of Y prediction:
+![5](https://github.com/user-attachments/assets/0facc071-2209-4221-839c-2fdca2e69f92)
+
+Array values of Y:
+![6](https://github.com/user-attachments/assets/38d3589e-4714-498e-881c-f9d52ee184aa)
+
+predicting with different values:
+
+![Screenshot 2024-11-05 000422](https://github.com/user-attachments/assets/09b49400-85f2-460a-87bf-8bd73b5875d4)
 
 ## Result:
 Thus the program to implement the the Logistic Regression Using Gradient Descent is written and verified using python programming.
